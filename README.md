@@ -7,7 +7,7 @@ Repository này tập trung vào việc **khai thác, phân tích và xây dựn
 
 ---
 
-## 🎯 Mục tiêu dự án
+## Mục tiêu dự án
 
 * Tiền xử lý và làm sạch dữ liệu Open Food Facts
 * Xây dựng mô hình **phân loại (Classification)** sản phẩm thực phẩm
@@ -17,7 +17,7 @@ Repository này tập trung vào việc **khai thác, phân tích và xây dựn
 
 ---
 
-## 📂 Cấu trúc thư mục
+## Cấu trúc thư mục
 
 ```text
 OPENFOODFACTS/
@@ -43,7 +43,7 @@ Drive: [Bộ dữ liệu Open Food Facts](https://drive.google.com/drive/folders
 
 ---
 
-## 🧠 Bài toán thực hiện
+## Bài toán thực hiện
 
 ### Phân lớp xếp hạng dinh dưỡng 
 
@@ -79,7 +79,7 @@ Kết quả cho thấy mô hình hoạt động tốt hơn với các nhãn có 
 ---
 
 
-### 2️⃣ Clustering
+### Clustering
 
 #### Vấn đề đặt ra
 
@@ -104,7 +104,10 @@ Dữ liệu được chia thành **4 cụm** với đặc trưng rõ ràng:
 * **Cụm 2 – Giàu protein:** ít đường và chất béo; phù hợp cho mục tiêu tăng cơ.
 * **Cụm 3 – Giàu chất béo và đạm:** phô mai, hạt giàu dầu, thịt đỏ; carbohydrate thấp.
 
-### 3️⃣ Luật kết hợp
+
+---
+
+### Luật kết hợp
 
 * Code thực hiện: code\AssociationRule.ipynb
 
