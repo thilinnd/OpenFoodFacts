@@ -106,6 +106,19 @@ Dữ liệu được chia thành **4 cụm** với đặc trưng rõ ràng:
 
 ### 3️⃣ Luật kết hợp
 
+* Code thực hiện: code\AssociationRule.ipynb
+
+Bài toán luật kết hợp nhằm làm rõ hai vấn đề cốt lõi: (1) xác định mối quan hệ giữa mức độ chế biến cao (NOVA 4), hàm lượng phụ gia và chất lượng dinh dưỡng kém (NutriScore thấp); (2) phân tích sự phân bố phụ gia và dinh dưỡng theo từng **ngành hàng (general category)** để nhận diện các nhóm sản phẩm có nguy cơ cao.
+
+Nhóm áp dụng thuật toán **FP-Growth** nhằm khai thác các luật có **Confidence** và **Lift** cao. So với Apriori, FP-Growth phù hợp hơn với bộ dữ liệu lớn như Open Food Facts nhờ cơ chế nén dữ liệu bằng FP-Tree, giúp giảm thời gian tính toán và cho phép thử nghiệm nhiều ngưỡng tham số khác nhau.
+
+Các biến được sử dụng bao gồm: `nova_group`, `nutriscore_grade`, `additives_n` và `general_category`. Các chỉ số dinh dưỡng chi tiết được loại bỏ để tránh sinh ra các luật hiển nhiên và giúp mô hình tập trung vào mối quan hệ giữa **chất lượng dinh dưỡng tổng hợp**, **mức độ chế biến** và **ngành hàng**, từ đó tạo ra các luật có ý nghĩa và dễ diễn giải.
+
+**Kết quả**
+Cây FP-Growth tree với support_threshold = 0.3
+
+![Cây FP-Growth tree với support_threshold = 0.3](image/growth_tree.png)
+
 ---
 
 ## ⚙️ Cài đặt
@@ -117,15 +130,12 @@ pip install -r requirements.txt
 Yêu cầu:
 
 * Python >= 3.12
-* pandas, numpy
-* scikit-learn
-* matplotlib / seaborn
 
 ---
 
 ## ▶️ Cách sử dụng
 
-1. Chuẩn bị dữ liệu trong thư mục `csv/`
+1. Chuẩn bị dữ liệu trong thư mục `csv/`, tải dữ liệu như hướng dẫn
 2. Chạy các script tiền xử lý và Huấn luyện mô hình trong `code/`
 3. Lưu các model để tái sử dụng trong:
    * `classification model/`
@@ -133,9 +143,14 @@ Yêu cầu:
 
 ---
 
-## 📈 Hướng mở rộng
+Sản phẩm được thực hiện trong khuôn khổ môn học Khai phá dữ liệu – Đại học Kinh tế Thành phố Hồ Chí Minh (UEH).
 
+**Giảng viên hướng dẫn:** TS. Nguyễn Thành Huy
 
----
+**Thành viên nhóm:**
 
-## 👤 Tác giả
+* Vương Thùy Linh ([@thilinnd](https://github.com/thilinnd))
+* Hoàng Thụy Hồng Ân ([@anhoang0502](https://github.com/anhoang0502))
+* Trần Khánh Ngân ([@khanhngantranvn](https://github.com/khanhngantranvn))
+* Bùi Linh Đan [@danbui31231027178-stack][https://github.com/danbui31231027178-stack]
+* Trần Quốc Đạt [@DatOneGuyL](https://github.com/DatOneGuyL)
