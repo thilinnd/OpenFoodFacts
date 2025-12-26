@@ -39,6 +39,6 @@ Nguồn dữ liệu: **Open Food Facts**
 
 Người dụng tạo thư mục `csv/` sau đó vào link drive dưới đây tải dữ liệu có tên df_final (1).csv để thực hiện các bước tiếp theo. 
 
-Drive: [https://drive.google.com/drive/folders/1tcjd1UQjF6lB7EnyTZVZtTA2m6_z1Os-?fbclid=IwY2xjawO2-5BleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEeFXEiVoyrP0mDSNN_CATAbXRU0ij-oy3ChVmEx5aTmO2E8gbRIINU9bChGNY_aem_T8-mVZTmEM8aC0i89Oj23w](Bộ dữ liệu Open Food Facts)
+Drive: [Bộ dữ liệu Open Food Facts](https://drive.google.com/drive/folders/1tcjd1UQjF6lB7EnyTZVZtTA2m6_z1Os-?fbclid=IwY2xjawO2-5BleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEeFXEiVoyrP0mDSNN_CATAbXRU0ij-oy3ChVmEx5aTmO2E8gbRIINU9bChGNY_aem_T8-mVZTmEM8aC0i89Oj23w)
 
 ---
