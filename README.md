@@ -152,5 +152,5 @@ Sản phẩm được thực hiện trong khuôn khổ môn học Khai phá dữ
 * Vương Thùy Linh ([@thilinnd](https://github.com/thilinnd))
 * Hoàng Thụy Hồng Ân ([@anhoang0502](https://github.com/anhoang0502))
 * Trần Khánh Ngân ([@khanhngantranvn](https://github.com/khanhngantranvn))
-* Bùi Linh Đan [@danbui31231027178-stack][https://github.com/danbui31231027178-stack]
+* Bùi Linh Đan [@danbui31231027178-stack](https://github.com/danbui31231027178-stack)
 * Trần Quốc Đạt [@DatOneGuyL](https://github.com/DatOneGuyL)
