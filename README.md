@@ -48,7 +48,7 @@ Drive: [Bộ dữ liệu Open Food Facts](https://drive.google.com/drive/folders
 ### Phân lớp xếp hạng dinh dưỡng 
 
 #### Lựa chọn biến đầu vào và xử lý nhãn mục tiêu
-
+* Code thực hiện: code/classification.ipynb
 * **Biến đầu vào (X):** Các đặc trưng dinh dưỡng trên 100g sản phẩm, được chuẩn hóa bằng **StandardScaler**, bao gồm:
 
   * `energy_100g`
@@ -81,8 +81,28 @@ Kết quả cho thấy mô hình hoạt động tốt hơn với các nhãn có 
 
 ### 2️⃣ Clustering
 
-* Gom nhóm sản phẩm dựa trên:
+#### Vấn đề đặt ra
 
+Cách phân loại thực phẩm truyền thống (snack, drink, dairy,...) chủ yếu dựa trên mục đích sử dụng và cảm quan, chưa phản ánh đúng **giá trị dinh dưỡng cốt lõi**. Điều này dẫn đến bất đối xứng thông tin khi các sản phẩm cùng danh mục có thể có thành phần dinh dưỡng rất khác nhau. Vì vậy, nhóm áp dụng **thuật toán K-Means** nhằm tái phân loại thực phẩm dựa trên đặc trưng dinh dưỡng.
+
+* Code thực hiện: code/clustering.ipynb
+* **Biến đầu vào (X):**
+ * `energy_100g`
+  * `fat_100g`
+  * `saturated-fat_100g`
+  * `carbohydrates_100g`
+  * `sugars_100g`
+  * `fiber_100g`
+  * `proteins_100g` 
+
+#### Kết quả phân cụm
+
+Dữ liệu được chia thành **4 cụm** với đặc trưng rõ ràng:
+
+* **Cụm 0 – Năng lượng cao, nhiều đường:** bánh kẹo, đồ ăn ngọt; dễ dư thừa calo, ít protein.
+* **Cụm 1 – Dinh dưỡng thấp:** nước khoáng, đồ uống không đường; không phải nguồn bổ sung dinh dưỡng chính.
+* **Cụm 2 – Giàu protein:** ít đường và chất béo; phù hợp cho mục tiêu tăng cơ.
+* **Cụm 3 – Giàu chất béo và đạm:** phô mai, hạt giàu dầu, thịt đỏ; carbohydrate thấp.
 
 ### 3️⃣ Luật kết hợp
 
